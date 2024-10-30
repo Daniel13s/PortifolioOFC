@@ -1,0 +1,223 @@
+@font-face {
+    font-family: padrao;
+    src: url(font/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: padrao1;
+    src: url(font/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+    font-family: padrao2;
+    src: url(font/Montserrat-Black.ttf);
+}
+body {
+    background-color: #13073A;
+    color: white;
+    font-family: padrao;
+}
+
+header {
+    height: 650px;
+    width: 100%;
+    margin: 50px 550px 0 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/imgAlternativa.png);
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 100px #251166;;
+}
+h1 {
+    font-size: 50px;
+    font-family: padrao2;
+}
+h2 {
+    font-weight: lighter;
+    font-size: 30px;
+    margin-top: -45px;
+}
+
+#paleta {
+    margin-top: 20px;
+    margin-left: -40px;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+#div1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #13073A;
+    box-shadow: 0 0 2px;
+    margin-right: 8px;
+}
+#div2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #2F1D68;
+    box-shadow: 0 0 2px;
+    margin-right: 8px;
+}
+#div3 {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #4F3A90;
+    box-shadow: 0 0 2px;
+    margin-right: 8px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#h3AM {
+    font-size: 30px;
+    font-family: padrao1;
+}
+.divisao {
+    flex-grow: 1;
+    flex-basis: 200;
+    width: 400px;
+    height: auto;
+    margin: 50px 20px 20px 20px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #2f1d6877;
+}
+aside:hover {
+    box-shadow: 0 0 20px #2f1d6877;
+}
+.exps:hover {
+    box-shadow: 0 0 20px #2f1d6877;
+}
+.projetos:hover {
+    box-shadow: 0 0 20px #4F3A90;
+}
+#h3AM {
+    text-align: center;
+}
+#exp {
+    background-color: #13073A;
+}
+#exp1 {
+    background-color: #2f1d6877;
+    display: flex;
+    align-items: center;
+    width: 97%;
+    height: 100px;
+    padding: 20px 0 20px 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#linhaExp1 {
+    background-color: white;
+    width: 1px;
+    height: 100px;
+    margin: 20px;
+}
+#exp2 {
+    background-color: #2f1d6877;
+    display: flex;
+    padding: 20px;
+    padding-right: 0;
+    align-items: center;
+    width: 97%;
+    height: 100px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#linhaExp2 {
+    background-color: white;
+    width: 1px;
+    height: 100px;
+    margin: 20px 20px 20px 55px;
+}
+#exp3 {
+    background-color: #2f1d6877;
+    display: flex;
+    padding: 20px 0px 20px 20px;
+    align-items: center;
+    width: 97%;
+    height: 100px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+#linhaExp3 {
+    background-color: white;
+    width: 1px;
+    height: 100px;
+    margin: 20px;
+}
+#projetosPC {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#projetosMobile {
+    display: none;
+}
+.projetos {
+    flex-grow: 1;
+    flex-basis: 200;
+    text-align: center;
+    width: 250px;
+    margin: 20px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #4F3A90;
+}
+.sites {
+    border-radius: 10px;
+}
+.linkSites {
+    background-color: #13073A;
+    padding-inline: 150px;
+    padding-block: 20px;
+    border-radius: 10px;
+    display: flex;
+}
+
+footer {
+    background-color: #4F3A90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 150px;
+    margin: 150px -8px -8px -8px;
+}
+#linha {
+    width: 2px;
+    height: 120px;
+    border-radius: 50px;
+    background-color: #13073A;
+    margin-inline: 30px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:900px){
+    #projetosPC {
+        display: none;
+    }
+    #projetosMobile {
+        display: block;
+    }
+    .projetos {
+        height: auto;
+    }
+    .linkSites {
+        padding-inline: 118px;
+    }
+}
