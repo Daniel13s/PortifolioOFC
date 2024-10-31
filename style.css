@@ -284,6 +284,7 @@ a {
     }
     #projetosMobile {
         display: flex;
+        padding: 0px;
         flex-wrap: wrap;
     }
     #pAM {
