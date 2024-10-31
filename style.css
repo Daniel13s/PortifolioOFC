@@ -225,10 +225,11 @@ aside:hover {
 }
 .linkSites {
     background-color: #13073A;
-    padding-inline: 150px;
+    padding-inline: 140px;
+    text-align: center;
     padding-block: 20px;
     border-radius: 10px;
-    display: flex;
+    display: block;
 }
 
 footer {
