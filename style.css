@@ -141,13 +141,19 @@ aside:hover {
     text-align: center;
 }
 #h3Exp {
-    position: absolute;
     font-family: padrao;
     font-weight: lighter;
     transform: rotate(-90deg);
     font-size: 30px;
-    left: 44%;
-    margin-top: 200px;
+    position: absolute;
+}
+#h3expdiv {
+    position: absolute;
+    width: 80px;
+    height: 10px;
+    display: flex;
+    justify-content: end;
+    margin-top: 170px;
 }
 #exp {
     background-color: #13073A;
@@ -277,7 +283,8 @@ a {
         display: none;
     }
     #projetosMobile {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
     #pAM {
         font-size: 17px;
@@ -285,9 +292,8 @@ a {
     }
     .projetos {
         height: auto;
-    }
-    #h3Exp {
-        left: -17%;
+        flex-grow: 1;
+        flex-basis: 200;
     }
     .linkSites {
         padding-inline: 118px;
