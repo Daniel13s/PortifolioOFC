@@ -16,6 +16,38 @@ body {
     font-family: padrao;
 }
 
+nav {
+    background-color: #4F3A90;
+    margin: -8px -8px 0px -8px;
+    height: 100px;
+    text-align: center;
+}
+#botoes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.navegacao {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: padrao;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    cursor: pointer;
+}
+.navegacao:hover {
+    background-color: #251166;
+}
+#botao2Mobile {
+    display: none;
+}
+#botao3Mobile {
+    display: none;
+}
+
 header {
     height: 650px;
     width: 100%;
@@ -82,6 +114,10 @@ main {
     font-size: 30px;
     font-family: padrao1;
 }
+#pAM {
+    font-size: 20px;
+    text-align: justify;
+}
 .divisao {
     flex-grow: 1;
     flex-basis: 200;
@@ -103,6 +139,15 @@ aside:hover {
 }
 #h3AM {
     text-align: center;
+}
+#h3Exp {
+    position: absolute;
+    font-family: padrao;
+    font-weight: lighter;
+    transform: rotate(-90deg);
+    font-size: 30px;
+    left: 44%;
+    margin-top: 200px;
 }
 #exp {
     background-color: #13073A;
@@ -208,14 +253,40 @@ a {
 }
 
 @media screen and (max-width:900px){
+    #botao2PC {
+        display: none;
+    }
+    #botao2Mobile {
+        display: block;
+    }
+    #botao3PC {
+        display: none;
+    }
+    #botao3Mobile {
+        display: block;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+        margin-top: -30px;
+    }
     #projetosPC {
         display: none;
     }
     #projetosMobile {
         display: block;
     }
+    #pAM {
+        font-size: 17px;
+        text-align: justify;
+    }
     .projetos {
         height: auto;
+    }
+    #h3Exp {
+        left: -17%;
     }
     .linkSites {
         padding-inline: 118px;
