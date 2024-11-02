@@ -90,15 +90,17 @@ nav {
     display: none;
 }
 
+
 /*HEADER*/
 header {
     height: 650px;
     width: 100%;
-    margin: 50px 550px 0 0;
+    margin: 50px 0px 0 0;
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-bottom: 20px;
+    align-items:end;
     background-image: url(images/imgAlternativa.png);
     background-size: cover;
     border-radius: 20px;
@@ -144,6 +146,14 @@ h2 {
     background-color: #4F3A90;
     box-shadow: 0 0 2px;
     margin-right: 8px;
+}
+#contato {
+    margin-top: 100px;
+}
+.imgHeader {
+    margin-top: 100px;
+    border-radius: 10px;
+    width: 50px;
 }
 
 /*MAIN*/
@@ -289,12 +299,12 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    height: 150px;
+    height: 100px;
     margin: 150px -8px -8px -8px;
 }
 #linha {
     width: 2px;
-    height: 120px;
+    height: 80px;
     border-radius: 50px;
     background-color: #13073A;
     margin-inline: 30px;
@@ -307,6 +317,12 @@ a {
 
 /*MOBILE*/
 @media screen and (max-width:900px){
+    #bola1 {
+        left: 2%;
+        width: 70px;
+        height: 70px;
+    }
+
     #botao2PC {
         display: none;
     }
@@ -345,5 +361,9 @@ a {
     }
     .linkSites {
         padding-inline: 118px;
+    }
+
+    #linha {
+        margin-inline: 7px;
     }
 }
